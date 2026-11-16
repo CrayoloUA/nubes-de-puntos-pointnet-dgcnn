@@ -1,0 +1,9 @@
+__pycache__/
+datos/
+prueba/
+prueba_ckpt/
+results_descartados/
+results/avance/
+results/*_samples.npz
+*.pt
+.ipynb_checkpoints/

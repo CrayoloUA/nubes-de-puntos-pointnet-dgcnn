@@ -1,0 +1,13 @@
+Entrenar en el PC de mesa (GPU NVIDIA)
+
+1) Instalar PyTorch con CUDA (https://pytorch.org/get-started/locally/) y despues:
+      pip install h5py scikit-learn matplotlib
+2) En esta carpeta:
+      python run_local.py --minutos 0
+   La primera vez baja los datasets (~750 MB) a la carpeta "datos".
+3) Si se corta o cierras la ventana, vuelve a correr el mismo comando: sigue donde quedo.
+4) Si DGCNN da "out of memory": python run_local.py --bs_dgcnn 16   (anotar este cambio en el informe).
+5) Si la perdida de DGCNN da NaN: python run_local.py --amp_dgcnn 0
+6) Para reutilizar las corridas viejas de PointNet (semilla 1), copiar a la carpeta "results" los 6 archivos
+   mn40_pointnet.json, sonn_pointnet.json, mn2sonn_pointnet.json y sus *_samples.npz de Google Drive (electiva_resultados).
+Al terminar quedan results/ , summary.json , summary.csv y figs/ .

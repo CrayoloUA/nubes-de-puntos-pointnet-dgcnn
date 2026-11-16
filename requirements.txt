@@ -1,0 +1,7 @@
+# Instalar PyTorch con CUDA aparte: https://pytorch.org/get-started/locally/
+numpy
+h5py
+scikit-learn
+matplotlib
+pandas
+jupyter
