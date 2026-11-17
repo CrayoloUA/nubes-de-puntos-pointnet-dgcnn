@@ -45,7 +45,7 @@ El cuaderno `Resultados.ipynb` recalcula estas tablas desde los 18 archivos de `
 | `data.py` | Carga de datos, normalización, aumento y las 10 clases compartidas. |
 | `aggregate.py` | Junta las semillas (media y desviación estándar) y genera las figuras. |
 | `convertir_modelnet.py` | Convierte los archivos OFF originales de ModelNet40 a nubes de 2048 puntos en HDF5. |
-| `exportar_modelos.py` | Extrae los pesos finales de los 18 modelos entrenados a `modelos/` (unos 190 MB, no incluidos en el repositorio por su tamaño). |
+| `exportar_modelos.py` | Extrae los pesos finales de los 18 modelos entrenados a `modelos/` (unos 190 MB, ya incluidos en la carpeta `modelos/` del repositorio). |
 | `Demo_modelo.ipynb` | Carga un modelo guardado, muestra su arquitectura, comprueba que reproduce la exactitud del informe y clasifica nubes de puntos. Necesita PyTorch y los datos. |
 | `results/` | Un JSON por corrida (`{tarea}_{modelo}_s{semilla}.json`) con métricas, historial y matriz de confusión. |
 | `summary.json`, `summary.csv` | Resumen con media y desviación estándar. |

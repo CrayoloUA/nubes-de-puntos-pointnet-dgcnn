@@ -7,4 +7,4 @@ results/avance/
 results/*_samples.npz
 *.pt
 .ipynb_checkpoints/
-modelos/
+!modelos/*.pt
